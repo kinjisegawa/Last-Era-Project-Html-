@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>ERA INVESTMENT</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/doc.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet"
+		type="text/css" />
+	<!-- Just for debugging purposes. Don't actually copy this line! -->
+	<!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<!-- Custom styles for this template -->
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body>
+	<div class="wrapper">
+		<header class="header1">
+			<div class="menu">
+				<nav class="navbar navbar-default" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-target=".navbar-ex2-collapse" data-toggle="collapse"
+							type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="mob-logo">
+							<div class="logo_img">
+								<a href="index.html"><img alt="" src="images/era_logo.png" /></a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="collapse navbar-collapse navbar-ex2-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="service.html">Services</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="participation.html">Tender and Sale Participation</a></li>
+							<li><a href="coverage.html">Coverage</a></li>
+							<li><a class="active" href="login.html">Login</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<div class="logo">
+				<div class="logo_img">
+					<a href="index.html"><img alt="" src="images/era_logo.png" style="height:40px;" /></a>
+				</div>
+			</div>
+		</header>
+
+		<video class="banner_video2" autoplay muted loop>
+			<source src="images/Banner_video/video (2160p) (1).mp4" type="video/mp4">
+		</video>
+
+		<div class="cntc_bnnr_txt">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="cntc_txt">
+							<h2>Members Login</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cntc_mid_sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="cntc_box_sec">
+
+							<div class="cntc_form">
+								<form class="contact_form" role="form">
+									<label for="uemail"><b>Email</b></label>
+									<input type="email" placeholder="Enter Email" name="uemail" required>
+
+									<label for="psw"><b>Password</b></label>
+									<input type="password" placeholder="Enter Password" name="psw" required>
+
+									<button type="submit">Login</button>
+									<!-- <div class="form-group">
+										<label for="email">Email</label>
+										<input class="form-control" id="email" name="email" type="email" />
+									</div>
+									<div class="form-group">
+										<label for="pwd">Password</label>
+										<input class="form-control" id="pwd" name="pwd" type="password" />
+									</div>
+									<button class="btn btn-default submit" type="submit">Submit</button> -->
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer1">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="copy">
+								<p>Copyright &copy; 2018 ERA Investment Limited. All Rights Reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- Bootstrap core JavaScript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script>
+		// Wait until the DOM has loaded before querying the document
+		$(document).ready(function () {
+			$('ul.tabs').each(function () {
+				// For each set of tabs, we want to keep track of
+				// which tab is active and it's associated content
+				var $active, $content, $links = $(this).find('a');
+
+				// If the location.hash matches one of the links, use that as the active tab.
+				// If no match is found, use the first link as the initial active tab.
+				$active = $($links.filter('[href="' + location.hash + '"]')[0] || $links[0]);
+				$active.addClass('active');
+
+				$content = $($active[0].hash);
+
+				// Hide the remaining content
+				$links.not($active).each(function () {
+					$(this.hash).hide();
+				});
+
+				// Bind the click event handler
+				$(this).on('click', 'a', function (e) {
+					// Make the old tab inactive.
+					$active.removeClass('active');
+					$content.hide();
+
+					// Update the variables with the new link and content
+					$active = $(this);
+					$content = $(this.hash);
+
+					// Make the tab active.
+					$active.addClass('active');
+					$content.show();
+
+					// Prevent the anchor's default click action
+					e.preventDefault();
+				});
+			});
+		});
+	</script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-carousel.js"></script>
+	<script src="js/application.js"></script>
+	<!-- OR -->
+	<!-- <script src="js/docs.min.js"></script> -->
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

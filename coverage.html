@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ERA INVESTMENT</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/doc.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet"
+        type="text/css" />
+    <!-- google map -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./index.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body>
+    <div class="wrapper">
+        <header class="header1">
+            <div class="menu">
+                <nav class="navbar navbar-default" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target=".navbar-ex2-collapse" data-toggle="collapse"
+                            type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="mob-logo">
+                            <div class="logo_img">
+                                <a href="index.html"><img alt="" src="images/era_logo.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="collapse navbar-collapse navbar-ex2-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="participation.html">Tender and Sale Participation</a></li>
+                            <li><a class="active" href="coverage.html">Coverage</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="logo">
+                <div class="logo_img">
+                    <a href="index.html"><img alt="" src="images/era_logo.png" style="height:40px;" /></a>
+                </div>
+            </div>
+        </header>
+
+        <video class="banner_video2" autoplay muted loop>
+            <source src="images/Banner_video/video (2160p) (2).mp4" type="video/mp4">
+        </video>
+
+        <div class="cntc_bnnr_txt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="cntc_txt">
+                            <h2>Coverage</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map_mid_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="map-container">
+
+                            <gmp-map center="38,24" zoom="2" map-id="DEMO_MAP_ID">
+                                <!-- INDIA -->
+                                <gmp-advanced-marker class="point cursor" position="13.0827, 80.2707" onclick="currentSlide(1)"
+                                    title="Chennai, INDIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="28.6139444, 77.2297222" onclick="currentSlide(2)"
+                                    title="New Delhi, INDIA"></gmp-advanced-marker>
+                                <!-- INDONESIA -->
+                                <gmp-advanced-marker class="point cursor" position="-6.9175, 107.6191" onclick="currentSlide(3)"
+                                    title="Bandung, INDONESIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="-6.4025, 106.7942" onclick="currentSlide(4)"
+                                    title="Depok, INDONESIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="-6.2088, 106.8456 " onclick="currentSlide(5)"
+                                    title="Jarkarta, INDONESIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="3.5952, 98.6722 " onclick="currentSlide(6)"
+                                    title="Medan, INDONESIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="-7.2575, 112.7521 " onclick="currentSlide(7)"
+                                    title="Surabaya, INDONESIA"></gmp-advanced-marker>
+                                <!-- MALAYSIA -->
+                                <gmp-advanced-marker class="point cursor" position="1.4927, 103.7414" onclick="currentSlide(8)"
+                                    title="Johor, MALAYSIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="6.1241, 100.3674" onclick="currentSlide(9)"
+                                    title="Kedah, MALAYSIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="5.4164, 100.3327" onclick="currentSlide(10)"
+                                    title="Pulau Pinang, MALAYSIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="4.5975, 101.0901" onclick="currentSlide(11)"
+                                    title="Perak, MALAYSIA"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="3.0738, 101.5183 " onclick="currentSlide(12)"
+                                    title="Selangor, MALAYSIA"></gmp-advanced-marker>
+                                <!-- PAKISTAN -->
+                                <gmp-advanced-marker class="point cursor" position="24.8607, 67.0011" onclick="currentSlide(13)"
+                                    title="Karachi, PAKISTAN"></gmp-advanced-marker>
+                                <!-- PHILIPPINES -->
+                                <gmp-advanced-marker class="point cursor" position="10.6782, 122.9543" onclick="currentSlide(14)"
+                                    title="Bacolod, PHILIPPINES"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="10.3157, 123.8854" onclick="currentSlide(15)"
+                                    title="Cebu, PHILIPPINES"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="7.1907, 125.4553" onclick="currentSlide(16)"
+                                    title="Davao, PHILIPPINES"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="14.5995, 120.9842" onclick="currentSlide(17)"
+                                    title="Manila, PHILIPPINES"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="14.5176, 121.0509" onclick="currentSlide(18)"
+                                    title="Taguig City, PHILIPPINES"></gmp-advanced-marker>
+                                <!-- VIETNAM -->
+                                <gmp-advanced-marker class="point cursor" position="21.062, 105.876" onclick="currentSlide(19)"
+                                    title="Hanoi, VIETNAM"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="10.10, 106.54" onclick="currentSlide(20)"
+                                    title="Ho Chi Minh, VIETNAM"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="16.11, 108.33" onclick="currentSlide(21)"
+                                    title="Hue, VIETNAM"></gmp-advanced-marker>
+                                <gmp-advanced-marker class="point cursor" position="10.40, 107.09" onclick="currentSlide(22)"
+                                    title="Vung Tau, VIETNAM"></gmp-advanced-marker>
+                                <!-- UK -->
+                                <gmp-advanced-marker class="point cursor" position="51.509865, -0.118092" onclick="currentSlide(23)"
+                                    title="London, UK"></gmp-advanced-marker>
+                            </gmp-map>
+
+
+                            <div class="Local-region-container">
+                                <h2 style="text-align:center">Slideshow Cover Region</h2>
+
+                                <div class="localname-container">
+                                    <!-- INDIA -->
+                                    <div class="mySlides">
+                                        <div class="numbertext">Chennai, INDIA</div>
+                                        <img src="images/Freelance works/India/Chennai/WhatsApp Image 2023-10-31 at 16.11.44.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">New Delhi, INDIA</div>
+                                        <img src="images/Freelance works/India/New Delhi/Delhi Railway.jpg">
+                                    </div>
+                                    <!-- INDONESIA -->
+                                    <div class="mySlides">
+                                        <div class="numbertext">Bandung, INDONESIA</div>
+                                        <img src="images/Freelance works/Indonesia/Bandung/WhatsApp Image 2023-10-26 at 18.55.14.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Depok, INDONESIA</div>
+                                        <img src="images/Freelance works/Indonesia/Depok/Proyek 2.jpg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Jarkarta, INDONESIA</div>
+                                        <img src="images/Freelance works/Indonesia/Jarkarta/WhatsApp Image 2023-10-30 at 22.03.49.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Medan, INDONESIA</div>
+                                        <img src="images/Freelance works/Indonesia/Medan/WhatsApp Image 2023-10-24 at 17.39.24.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Surabaya, INDONESIA</div>
+                                        <img src="images/Freelance works/Indonesia/Surabaya/WhatsApp Image 2023-10-25 at 11.06.23.jpeg">
+                                    </div>
+                                    <!-- MALAYSIA -->
+                                    <div class="mySlides">
+                                        <div class="numbertext">Johor, MALAYSIA</div>
+                                        <img src="images/Freelance works/Capture.JPG">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Kedah, MALAYSIA</div>
+                                        <img src="images/Freelance works/Malaysia/Kedah/WhatsApp Image 2023-11-01 at 17.21.52.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Pulau Pinang, MALAYSIA</div>
+                                        <img src="images/Freelance works/Capture.JPG">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Perak, MALAYSIA</div>
+                                        <img src="images/Freelance works/Malaysia/Pulau Pinang/WhatsApp Image 2023-10-31 at 17.03.34.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Selangor, MALAYSIA</div>
+                                        <img src="images/Freelance works/Malaysia/Selangor/WechatIMG280.jpeg">
+                                    </div>
+                                    <!-- PAKISTAN -->
+                                    <div class="mySlides">
+                                        <div class="numbertext">Karachi, PAKISTAN</div>
+                                        <img src="images/Freelance works/Pakistan/Karachi/WechatIMG179.jpeg">
+                                    </div>
+                                    <!-- Philippines -->
+                                    <div class="mySlides">
+                                        <div class="numbertext">Bacolod, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Philippines/Bacolod/WechatIMG231.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Cebu, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Philippines/Cebu/WhatsApp Image 2023-10-26 at 16.50.51.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Davao, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Philippines/Davao/WhatsApp Image 2023-10-27 at 14.01.32.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Manila, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Philippines/Metro Manila/WhatsApp Image 2023-10-31 at 16.52.30.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Taguig City, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Philippines/Taguig City/WhatsApp Image 2023-11-02 at 13.35.39 (1).jpeg">
+                                    </div>
+                                    <!-- VIETNAM -->
+                                    <div class="mySlides">
+                                        <div class="numbertext">Hanoi, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Vietnam/Hanoi/WechatIMG225.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Ho Chi Minh, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Vietnam/Ho Chi Minh/WhatsApp Image 2023-10-31 at 15.53.14.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Hue, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Vietnam/Hue/WhatsApp Image 2023-10-24 at 16.18.18.jpeg">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Vung Tau, PHILIPPINES</div>
+                                        <img src="images/Freelance works/Vietnam/Vung Tau/WechatIMG353.jpeg">
+                                    </div>
+                                    <!-- UK -->
+                                    <div class="mySlides">
+                                        <div class="numbertext">London, UK</div>
+                                        <img src="images/Freelance works/Capture.JPG">
+                                    </div>
+                                    <a class="L-prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="L-next" onclick="plusSlides(1)">❯</a>
+
+                                    <!-- <div class="caption-container">
+                                        <p id="caption"></p>
+                                    </div> -->
+
+                                    <div class="Localname-row">
+                                        <!-- India -->
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(1)">
+                                            <img
+                                                src="images/Freelance works/India/Chennai/WhatsApp Image 2023-10-31 at 16.11.44.jpeg"
+                                                alt="Chennai, INDIA">
+                                            <div class="cover-title">
+                                                <p><strong>Chennai,</strong></p>
+                                                <p>INDIA</p>
+                                                <h6>E Kal Mandapam Rd, Chennai Port Trust, Chennai, Tamil Nadu 600001, India</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(2)">
+                                            <img 
+                                                src="images/Freelance works/India/New Delhi/Delhi Railway.jpg"
+                                                alt="New Delhi, INDIA">
+                                            <div class="cover-title">
+                                                <p><strong>New Delhi, </strong></p>
+                                                <p>INDIA</p>
+                                                <h6>Bhavbhuti Marg, Ratan Lal Market, Kamla Market, Ajmeri Gate, New Delhi, Delhi, 110006, India</h6>
+                                            </div>
+                                        </div>
+                                        <!-- Indonesia -->
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(3)">
+                                            <img 
+                                                src="images/Freelance works/Indonesia/Bandung/WhatsApp Image 2023-10-26 at 18.55.14.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Bandung,</strong></p>
+                                                <p>INDONESIA</p>
+                                                <h6>Jl. Pramuka II No.43, RT.003/RW.010, Mampang, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16433, Indonesia</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(4)">
+                                            <img  src="images/Freelance works/Indonesia/Depok/Proyek 2.jpg">
+                                            <div class="cover-title">
+                                                <p><strong>Depok,</strong></p>
+                                                <p>INDONESIA</p>
+                                                <h6>RT.9/RW.1, West Kuningan, Mampang Prapatan, South Jakarta City, Jakarta 12710, Indonesia</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(5)">
+                                            <img 
+                                                src="images/Freelance works/Indonesia/Jarkarta/WhatsApp Image 2023-10-30 at 22.03.49.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Jarkarta,</strong></p>
+                                                <p>INDONESIA</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(6)">
+                                            <img
+                                                src="images/Freelance works/Indonesia/Medan/WhatsApp Image 2023-10-24 at 17.39.24.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Medan,</strong></p>
+                                                <p>INDONESIA</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(7)">
+                                            <img 
+                                                src="images/Freelance works/Indonesia/Surabaya/WhatsApp Image 2023-10-25 at 11.06.23.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Surabaya,</strong></p>
+                                                <p>INDONESIA</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <!-- Malaysia -->
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(8)">
+                                            <img  src="images/Freelance works/Capture.JPG">
+                                            <div class="cover-title">
+                                                <p><strong>Johor,</strong></p>
+                                                <p>MALAYSIA</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(9)">
+                                            <img 
+                                                src="images/Freelance works/Malaysia/Kedah/WhatsApp Image 2023-11-01 at 17.21.52.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Kedah,</strong></p>
+                                                <p>MALAYSIA</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(10)">
+                                            <img src="images/Freelance works/Capture.JPG">
+                                            <div class="cover-title">
+                                                <p><strong>Perak,</strong></p>
+                                                <p>MALAYSIA</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(11)">
+                                            <img 
+                                                src="images/Freelance works/Malaysia/Pulau Pinang/WhatsApp Image 2023-10-31 at 17.03.34.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Pulau Pinang,</strong></p>
+                                                <p>MALAYSIA</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(12)">
+                                            <img src="images/Freelance works/Malaysia/Selangor/WechatIMG280.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Selangor,</strong></p>
+                                                <p>MALAYSIA</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <!-- Pakistan -->
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(13)">
+                                            <img  src="images/Freelance works/Pakistan/Karachi/WechatIMG179.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Karachi,</strong></p>
+                                                <p>PAKISTAN</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <!-- Philippines -->
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(14)">
+                                            <img src="images/Freelance works/Philippines/Bacolod/WechatIMG231.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Bacolod,</strong></p>
+                                                <p>PHILIPPINES</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(15)">
+                                            <img 
+                                                src="images/Freelance works/Philippines/Cebu/WhatsApp Image 2023-10-26 at 16.50.51.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Cebu,</strong></p>
+                                                <p>PHILIPPINES</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(16)">
+                                            <img 
+                                                src="images/Freelance works/Philippines/Davao/WhatsApp Image 2023-10-27 at 14.01.32.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Davao,</strong></p>
+                                                <p>PHILIPPINES</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(17)">
+                                            <img
+                                                src="images/Freelance works/Philippines/Metro Manila/WhatsApp Image 2023-10-31 at 16.52.30.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Manila,</strong></p>
+                                                <p>PHILIPPINES</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(18)">
+                                            <img
+                                                src="images/Freelance works/Philippines/Taguig City/WhatsApp Image 2023-11-02 at 13.35.39 (1).jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Taguig City,</strong></p>
+                                                <p>PHILIPPINES</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <!-- Vietnam -->
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(19)">
+                                            <img src="images/Freelance works/Vietnam/Hanoi/WechatIMG225.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Hanoi,</strong></p>
+                                                <p>VIETNAM</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(20)">
+                                            <img src="images/Freelance works/Vietnam/Ho Chi Minh/WhatsApp Image 2023-10-31 at 15.53.14.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Ho Chi Minh,</strong></p>
+                                                <p>VIETNAM</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(21)">
+                                            <img
+                                                src="images/Freelance works/Vietnam/Hue/WhatsApp Image 2023-10-24 at 16.18.18.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Hue,</strong></p>
+                                                <p>VIETNAM</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(22)">
+                                            <img src="images/Freelance works/Vietnam/Vung Tau/WechatIMG353.jpeg">
+                                            <div class="cover-title">
+                                                <p><strong>Vung Tau,</strong></p>
+                                                <p>VIETNAM</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                        <!-- UK -->
+                                        <div class="Localname-column demo cursor" onclick="currentSlide(23)">
+                                            <img src="images/Freelance works/Capture.JPG">
+                                            <div class="cover-title">
+                                                <p><strong>London,</strong></p>
+                                                <p>UK</p>
+                                                <h6>NO. 41 (OLD 18), COLLEGE ROAD, NUNGAMBAKKAM, CHENNAI- 600 006</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    let slideIndex = 1;
+                                    showSlides(slideIndex);
+
+                                    function plusSlides(n) {
+                                        showSlides(slideIndex += n);
+                                    }
+
+                                    function currentSlide(n) {
+                                        showSlides(slideIndex = n);
+                                    }
+
+                                    function showSlides(n) {
+                                        let i;
+                                        let slides = document.getElementsByClassName("mySlides");
+                                        let dots = document.getElementsByClassName("demo");
+                                        let pt = document.getElementsByClassName("point");
+                                        let captionText = document.getElementById("caption");
+                                        if (n > slides.length) { slideIndex = 1 }
+                                        if (n < 1) { slideIndex = slides.length }
+                                        for (i = 0; i < slides.length; i++) {
+                                            slides[i].style.display = "none";
+                                        }
+                                        for (i = 0; i < dots.length; i++) {
+                                            dots[i].className = dots[i].className.replace(" active", "");
+                                        }
+                                        slides[slideIndex - 1].style.display = "block";
+                                        dots[slideIndex - 1].className += " active";
+
+                                        for (i = 0; i < pt.length; i++) {
+                                            pt[i].className = pt[i].className.replace(" active", "");
+                                        }
+                                        pt[slideIndex - 1].className += " active";
+                                        captionText.innerHTML = pt[slideIndex - 1].alt;
+                                    }
+                                </script>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer1-largerview">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="copy">
+                                <p>Copyright &copy; 2018 ERA Investment Limited. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        // Wait until the DOM has loaded before querying the document
+        $(document).ready(function () {
+            $('ul.tabs').each(function () {
+                // For each set of tabs, we want to keep track of
+                // which tab is active and it's associated content
+                var $active, $content, $links = $(this).find('a');
+
+                // If the location.hash matches one of the links, use that as the active tab.
+                // If no match is found, use the first link as the initial active tab.
+                $active = $($links.filter('[href="' + location.hash + '"]')[0] || $links[0]);
+                $active.addClass('active');
+
+                $content = $($active[0].hash);
+
+                // Hide the remaining content
+                $links.not($active).each(function () {
+                    $(this.hash).hide();
+                });
+
+                // Bind the click event handler
+                $(this).on('click', 'a', function (e) {
+                    // Make the old tab inactive.
+                    $active.removeClass('active');
+                    $content.hide();
+
+                    // Update the variables with the new link and content
+                    $active = $(this);
+                    $content = $(this.hash);
+
+                    // Make the tab active.
+                    $active.addClass('active');
+                    $content.show();
+
+                    // Prevent the anchor's default click action
+                    e.preventDefault();
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        function location_image(imgs) {
+            document.getElementById("mapimg-1").style.display = "block";
+            // var imgShow=document.getElementById("map-1");
+            // imgShow.src=imgs.src;
+            // imgShow.getElementById.style.display="block";
+        }
+
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=marker&v=beta"
+        defer>
+        </script>
+
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/application.js"></script>
+    <!-- OR -->
+    <!-- <script src="js/docs.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
